@@ -16,7 +16,9 @@ namespace Draw3DSurface
         /// <param name="observations"></param>
         public static double[,] GetProbabilityDensity(double[][] observations, MultivariateNormalDistribution dist)
         {
-            double[,] probabilityDensity = new double[observations.Length, observations.Length]; // Probability Density Function
+            int rowCount = observations.Length; 
+            int columnCount = observations.Length;
+            double[,] probabilityDensity = new double[rowCount, columnCount]; // Probability Density Function
             for (int i = 0; i < observations.Length; i++)
             {
                 for (int j = 0; j < observations.Length; j++)

@@ -24,6 +24,7 @@ using System.Linq;
 namespace Draw3DSurface
 {
     // http://reference.wolfram.com/mathematica/tutorial/ThreeDimensionalSurfacePlots.html
+    
 
     public enum ColorCoding
     {
@@ -125,7 +126,7 @@ namespace Draw3DSurface
             MinY = yList.Min();
             MaxY = yList.Max();
 
-            Rows = x.Length;
+            Rows = x.Length; 
             Columns = y.Length;
 
             double[][] observations = new double[Rows][];
